@@ -20,8 +20,7 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('/textures/matcaps/8.png')
-matcapTexture.colorSpace = THREE.SRGBColorSpace
+const matcapTexture = textureLoader.load('textures/matcaps/8.png')
 
 /**
  * Fonts
@@ -117,7 +116,6 @@ controls.enableDamping = true
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
-renderer.outputColorSpace = THREE.SRGBColorSpace
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
